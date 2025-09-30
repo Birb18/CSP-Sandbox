@@ -1,0 +1,17 @@
+def main() -> None:
+   aA=int(input())
+
+   if aA >=0:
+    print("positive")
+
+   if aA <0:
+    print("negative")
+
+   if (aA % 2)==0:
+     print("even")
+
+   if (aA%2)!=0:
+     print("odd")
+
+if __name__ == "__main__":
+  main()
