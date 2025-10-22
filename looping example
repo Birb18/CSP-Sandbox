@@ -1,0 +1,15 @@
+"""
+takes 1 input, n which is the amount of inputs d will take. 
+Than if b is a odd number it will increase quant by 1.
+Once all loops are dont it will print the total amount of odd numbers
+"""
+def main() -> None:
+    quant=0
+    n=int(input())
+    for _ in range(n):
+        d=int(input())
+        if d%2==1:
+            quant+=1
+    print(quant)
+if __name__ == "__main__":
+    main()
