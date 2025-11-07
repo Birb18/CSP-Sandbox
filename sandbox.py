@@ -1,10 +1,6 @@
-"""
-AP Computer Science Principles Sandbox
-This is a repo you can use to store small warm-up problems and try out code.
-"""
-
 def main() -> None:
-  pass
-
+    num=int(input())
+    for _ in range(num):
+        print(input())
 if __name__ == "__main__":
-  main()
+    main()
