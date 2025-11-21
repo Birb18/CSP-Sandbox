@@ -1,9 +1,19 @@
+
+
+
 def main() -> None:
-    num=int(input())
-    for _ in range(num):
-        x, y=input().split(" ")
-        x=int(x)
-        y=int(y)
-        print(f'{x+y} {x*y}')
+    cases:int=int(input())
+    for _ in range(cases):
+        yab=input()
+        speed, wall = yab.split(":")
+        speed=float(speed)
+        wall=float(wall)
+        time=wall/speed
+        if time <=1:
+            print("SWERVE")
+        elif time <=5:
+            print('BRAKE')
+        else:
+            print('SAFE')
 if __name__ == "__main__":
     main()
